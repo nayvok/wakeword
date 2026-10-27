@@ -50,8 +50,11 @@ wakeword --json status
 wakeword --json switch yasmina
 ```
 
-В stdout — один JSON-ответ, в stderr — диагностика. [Контракт API и YAM HTTP](docs/API.md),
-[Python-клиент CLI](examples/cli_client.py), [Python-клиент YAM](examples/yam_client.py).
+Основной вход для UI — стандартный API YAM: `/api/plugins/wakeword-cli/invoke`.
+`.yap` — формат пакета; отдельный HTTP-сервер Wakeword не нужен. JSON v1 — результат
+команды плагина. В прямом CLI stdout содержит один JSON-ответ, stderr — диагностику.
+[Интеграция с YAM и контракт ответа](docs/API.md), [Python-клиент YAM](examples/yam_client.py),
+[Python-клиент CLI](examples/cli_client.py).
 Коды выхода: `0` — успех, `1` — ошибка операции, `2` — аргументы, `3` — занято.
 
 ## Что меняется
