@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wakeword CLI response v1",
+  "type": "object",
+  "required": ["api_version", "ok", "command", "request_id"],
+  "properties": {
+    "api_version": {"const": 1},
+    "ok": {"type": "boolean"},
+    "command": {"type": "string"},
+    "request_id": {"type": ["string", "null"]}
+  },
+  "oneOf": [
+    {"properties": {"ok": {"const": true}, "data": {"type": "object"}}, "required": ["data"], "not": {"required": ["error"]}},
+    {"properties": {"ok": {"const": false}, "error": {"type": "object", "required": ["code", "message"], "properties": {"code": {"type": "string"}, "message": {"type": "string"}}}}, "required": ["error"], "not": {"required": ["data"]}}
+  ]
+}

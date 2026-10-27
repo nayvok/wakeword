@@ -1,0 +1,10 @@
+/target/
+/dist/
+/diagnostics/
+/*.yap
+**/__pycache__/
+*.pyc
+# Local research notes contain firmware excerpts and machine-specific context.
+/FUNCTIONS_ANALYSIS.md
+/PROTOBUF_IPC_NOTES.md
+/CUSTOM_WAKEWORDS_PLAN.md

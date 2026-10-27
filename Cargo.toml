@@ -1,0 +1,3 @@
+[workspace]
+members = ["wakeword-core", "wakeword-cli"]
+resolver = "2"
