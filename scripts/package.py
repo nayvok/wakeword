@@ -23,8 +23,6 @@ permissions = ["exec"]
 kind = "binary"
 path = "wakeword"
 
-[compatibility]
-models = ["yandexmini_2"]
 '''
 output = args.output
 output.parent.mkdir(parents=True, exist_ok=True)
