@@ -11,7 +11,8 @@
 
 ## Установка через YAM
 
-Скачайте [wakeword-cli.yap](https://github.com/nayvok/wakeword/releases/latest/download/wakeword-cli.yap)
+[Установка по имени через собственный индекс YAM](docs/DISTRIBUTION.md) уже доступна.
+Или скачайте [wakeword-cli.yap](https://github.com/nayvok/wakeword/releases/latest/download/wakeword-cli.yap)
 или [соберите](CONTRIBUTING.md) пакет и установите через YAM:
 
 ```sh
@@ -73,3 +74,8 @@ CRC32 кэша. Для Яндекса/Ясмины отключает повто
   [BetterYAM](https://github.com/Yandex-Station-Universal-Repo/BetterYAM).
 
 [Участие в разработке](CONTRIBUTING.md) · [История версий](CHANGELOG.md)
+
+## Лицензия
+
+[MIT](LICENSE). Лицензия относится к коду Wakeword; модели и прошивка Яндекса
+в репозиторий и пакет не входят.

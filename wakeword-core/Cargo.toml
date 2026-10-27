@@ -1,8 +1,10 @@
 [package]
 name = "wakeword_core"
-version = "1.2.0"
+version = "1.2.1"
 edition = "2021"
 rust-version = "1.89"
+license = "MIT"
+repository = "https://github.com/nayvok/wakeword"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }

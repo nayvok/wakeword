@@ -16,7 +16,8 @@ jobs:
       - run: cargo clippy --workspace --all-targets --locked -- -D warnings
       - run: cargo build --release --locked --target aarch64-unknown-linux-musl
       - run: python3 scripts/package.py --output dist/wakeword-cli.yap
-      - run: python3 -m py_compile scripts/package.py examples/cli_client.py examples/yam_client.py
+      - run: python3 -m py_compile scripts/package.py scripts/registry.py examples/cli_client.py examples/yam_client.py
+      - run: python3 scripts/registry.py dist/wakeword-cli.yap --output dist/index.json
       - uses: actions/upload-artifact@v4
         with:
           name: wakeword-cli-aarch64

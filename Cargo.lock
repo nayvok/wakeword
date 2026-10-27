@@ -94,7 +94,7 @@ checksum = "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
 
 [[package]]
 name = "wakeword-cli"
-version = "1.2.0"
+version = "1.2.1"
 dependencies = [
  "serde_json",
  "wakeword_core",
@@ -102,7 +102,7 @@ dependencies = [
 
 [[package]]
 name = "wakeword_core"
-version = "1.2.0"
+version = "1.2.1"
 dependencies = [
  "serde",
  "serde_json",

@@ -1,0 +1,21 @@
+{
+  "format": 3,
+  "packages": [
+    {
+      "id": "wakeword-cli",
+      "version": "1.2.1",
+      "name": "Wakeword CLI",
+      "description": "Переключение слова активации: Алиса / Яндекс / Ясмина. CLI и JSON API v1.",
+      "sha256": "184a6f134977e86344784e50cdac26251715bcead7d3bca640f03c2de5149d10",
+      "models": [],
+      "features": [
+        "arch.aarch64"
+      ],
+      "target": "any",
+      "url": "https://github.com/nayvok/wakeword/releases/download/v1.2.1/wakeword-cli.yap"
+    }
+  ],
+  "latest": {
+    "wakeword-cli": "1.2.1"
+  }
+}
