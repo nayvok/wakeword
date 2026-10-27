@@ -11,7 +11,8 @@
 
 ## Установка через YAM
 
-Скачайте или [соберите](CONTRIBUTING.md) `wakeword-cli.yap` и установите через YAM:
+Скачайте [wakeword-cli.yap](https://github.com/nayvok/wakeword/releases/latest/download/wakeword-cli.yap)
+или [соберите](CONTRIBUTING.md) пакет и установите через YAM:
 
 ```sh
 yam install ./wakeword-cli.yap
